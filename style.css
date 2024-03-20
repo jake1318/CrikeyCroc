@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(74, 206, 100); /* Sky blue background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.faq-section {
+  background-color: rgb(74, 206, 100); /* Replace with the appropriate color */
+  color: #fff; /* Adjust text color as needed */
+  padding: 2rem;
+}
+html,
+body {
+  height: 100%; /* Make sure the html and body cover the full height of the screen */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  background-image: url("img/background.webp"); /* Path to your background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+.intro-image {
+  max-width: 100%; /* Ensures image is not wider than its container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Aligns image to the center */
+  margin: 1rem auto; /* Adds space around the image and centers it */
+}
+.intro-section {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: rgb(
+    74,
+    206,
+    100
+  ); /* Choose a background color that fits your design */
+  color: #333; /* Set the text color */
+  margin-bottom: 2rem; /* Space between this section and the container */
+}
+
+.intro-section h1 {
+  margin: 0; /* Remove default margin */
+  padding: 0.5rem 0; /* Add some vertical padding */
+  font-size: 2.5rem; /* Choose an appropriate font-size */
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  /* Remove background-image from .container if applying it to the whole screen */
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; /* Space between rows */
+}
+
+.bubble {
+  flex-basis: 48%; /* Adjust width of the bubbles */
+  position: relative;
+  padding-top: 60px; /* Space for the absolute positioned step */
+}
+
+.step {
+  background: #b2d8b2; /* Light green background */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #000000;
+  position: absolute;
+  top: 30px; /* Adjusted to push down below navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensures the step is above the instruction, may adjust if necessary */
+}
+
+.instruction {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative; /* Context for absolute positioning */
+  z-index: 0; /* Below the step */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.instruction-header {
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.instruction {
+  /* ... existing styles ... */
+  text-align: center; /* Center the content including the image */
+}
+
+.instruction-image {
+  width: 100px; /* Or your desired width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Treat the image as block to allow for margins */
+  margin: 0 auto 20px; /* Center the image and add space below */
+}
+.faq-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  background-color: darkgreen; /* Replace with the appropriate color */
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.question-title {
+  font-size: 2rem;
+}
+
+.answer {
+  font-size: 1.6rem;
+  color: lightgreen; /* Replace with the appropriate color */
+}
+
+.peng-characters {
+  /* Position your penguin images as needed */
+}
+.tokenomics-section {
+  background-color: rgb(74, 206, 100); /* Adjust to match the screenshot blue */
+  text-align: center;
+  padding: 2rem;
+}
+
+.tokenomics-title {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contract-address {
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  color: green;
+}
+
+.contract-address p {
+  margin: 0;
+  display: inline;
+}
+
+.copy-btn {
+  background-color: #ffcc00; /* Adjust to match the screenshot yellow */
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  width: 200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #333333;
+  margin: 0.5rem 0;
+}
+
+.card span {
+  color: darkgreen; /* Adjust to match the screenshot blue */
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgreen; /* Example background color */
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 3; /* Higher than .step and other contents */
+  /* Other navbar styles... */
+}
+
+/* Set a common class for all images in the navbar to ensure they are the same size */
+.nav-image {
+  width: 50px; /* This will set a fixed width for all images */
+  height: 50px; /* This will set a fixed height for all images */
+  object-fit: contain; /* This will make sure the image aspect ratio is preserved */
+}
+
+.nav-logo img,
+.nav-link img {
+  /* Applying the common size class to all images in the navbar */
+  width: 50px; /* Ensure this width aligns with the height for correct aspect ratio */
+  height: 50px; /* Ensure this height aligns with the width for correct aspect ratio */
+  object-fit: contain; /* This ensures that the images do not stretch */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list-right {
+  margin-left: auto; /* This pushes the nav-list-right to the right side */
+}
+
+.nav-item {
+  margin: 0 1rem; /* Spacing between items */
+}
+
+/* Optional: Add some hover effects for the links */
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #ffffff; /* White background on hover */
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.first-row {
+  padding-top: 100px; /* Adjust as necessary to push down the content */
+}
+.buy {
+  color: white;
+}
